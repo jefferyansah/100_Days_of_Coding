@@ -1,62 +1,115 @@
-### Summary of What I learned in Chapter 1
+### Summary of What I learned in Chapter 2
 
-In Chapter 1 my key takes were :
-* A shell is a program that allows you type isntrcutions to your computer
-### Summary of What I learned in Chapter 1
 
-In Chapter 1 my key takes were :
-* A shell is a program that allows you type isntrcutions to your computer
-* Traceback is also known as stacktrace, tracestack or backtrace in other programming languages
-*  Expressions are value combine with an operator
-*  A variable is a box where you store values
-*  A value that is passed into a funtion is called an argument
+What are modules in python.
+
+Modules are built-in functions from the python's standard library that you import into your programs.
+
+
+In Chapter 2 my key takes were :
+* Modules are built-in functions from the python's standard library that you import into your programs.
+### Summary of What I learned in Chapter 2
+
 
 
 Answers to the Practice Questions
-1. Which of the following are operators, and which are values? 
+1. What are the two values of the Boolean data type? How do you 
+write them?
 
-* Operators: `'*', '-', '/', '+'`
-* Values : `'hello', '-88.8', '5'`
+* `True` and `False`
+* They start with a capital letter
 
-2. Which of the following is a variable, and which is a string?
+2. What are the three Boolean operators?
 
-* Variable : `spam`
-* String : `'spam'`
+* `AND`, `OR` `NOT` 
 
-3. Name three Data Types
-* `Int`
-* `String`
-* `Float`
+3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
+`AND TABLE`
+* `TRUE AND TRUE`: `TRUE`
+* `TRUE AND FALSE`: `FALSE` (vice versa)
+* `FLASE AND FALSE`: `FALSE`
+
+`OR TABLE`
+* `TRUE OR TRUE`: `TRUE`
+* `TRUE OR FALSE`: `TRUE` (vice versa)
+* `FLASE AND FALSE`: `FALSE`
+
+`NOT TABLE`
+* `NOT FALSE`: `TRUE`
+* `NOT TRUE`: `FALSE`
+
+4.  What do the following expressions evaluate to?
+
+Ans:
+(5 > 4) and (3 == 5) : `True and False: False`
+not (5 > 4) : `False`
+(5 > 4) or (3 == 5): `True or False: True`
+not ((5 > 4) or (3 == 5)): `not(True):False`
+(True and True) and (True == False) : `True and False: False`
+(not False) or (not True) : `True or False: True`
+
+
 
 4.  What is an expression made up of? What do all expressions do?
 * `An expression is made up of a value and an operator`
 * `All expressions evaluate to a single value`
 
-5. This chapter introduced assignment statements, like spam = 10. What is 
-the difference between an expression and a statement?
-* `An expression evaluate to single value while a statement usually assigns a value to a variable`
+5. What are the six comparison operators?
 
-6. What does the variable bacon contain after the following code runs?
-bacon = 20
-bacon + 1
-* `Answer : 21`
+Ans
+` '==', '>', '<', '>=', '<=', '!='`
 
-7. What should the following two expressions evaluate to?
-'spam' + 'spamspam' 
-'spam' * 3
-Answers
-* `'spam' + 'spamspam'  = 'spamspamspam'`
-* `'spam' * 3 = 'spamspamspam'`
+6. What is the difference between the equal to operator and the assign-
+ment operator? 
 
-8. Why is eggs a valid variable name while 100 is invalid?
-* `Becuase python does not allow variable names to start with numbers `
+Ans: The equal operator `(==)` is used to compare the two values while the assigment operator `(=)` is used to store a value in a variable.
 
-9. Why does this expression cause an error? How can you fix it?
-Expression: 
-```
-'I have eaten ' + 99 + ' burritos.'
-```
-This expression causes an error becuase you are attempting to concatenate an integer (99) with strings which is not permissible in python. To fix this, you have to cast the integer as string using 'str()' function. Thus the final correct systax will now look like this:
-`'I have eaten ' + str(99) + ' burritos.' `
+7. Explain what a condition is and where you would use one.
+A condition is a state of a program execution where a some paremeters are checked before the program execution continues. (answers both questions)
 
-Let's move on to chapter two
+8. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+    print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+* `Statement block: spam = 0`
+* `Condition block: if spam == 10:`
+* `If Clause block: print('eggs')
+    if spam > 5:
+        print('bacon')
+    else:
+        print('ham')
+    print('spam'):`
+
+9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is 
+stored in spam, and prints Greetings! if anything else is stored in spam.
+
+Ans: Code Attached.
+
+10. What can you press if your program is stuck in an infinite loop?
+
+Ans: `CTRL C`
+
+11. What is the difference between break and continue?
+
+Ans: `break` will jump out of the loop while `continue` stop execution at the current and go back to the beginning of the loop
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) 
+in a for loop?
+
+13. Write a short program that prints the numbers 1 to 10 using a for loop. 
+Then write an equivalent program that prints the numbers 1 to 10 using 
+a while loop.
+
+14.  If you had a function named bacon() inside a module named spam, how 
+would you call it after importing spam?
+
+Ans: spam.bacon()
+
+
