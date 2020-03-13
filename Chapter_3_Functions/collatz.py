@@ -1,28 +1,19 @@
-
-
-
 def collatz(number):
 
-	
+    if number % 2 == 0:
+        print(number // 2)
+        return number // 2
 
-	if  number%2 ==0:
-		a = number//2
-		return print(a), a
-
-	elif number%2 !=0:
-		a =  3 * number + 1
-		return print(a), a
-
-		
-
-print('Enter a number')
-vra = int(input())
+    elif number % 2 == 1:
+        result = 3 * number + 1
+        print(result)
+        return result
 
 
-
-
-
-
-
-# while a != 1:
-# 	collatz(vra)
+while True:
+	try:
+		n = input("Give me a number: ")
+		while n != 1:
+		    n = collatz(int(n))
+	except ValueError:
+		print('Please enter a interger')
