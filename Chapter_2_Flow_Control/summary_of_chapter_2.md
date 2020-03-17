@@ -8,7 +8,8 @@ Modules are built-in functions from the python's standard library that you impor
 
 In Chapter 2 my key takes were :
 * Modules are built-in functions from the python's standard library that you import into your programs.
-### Summary of What I learned in Chapter 2
+
+* `sys.exit` is a great way to terminate a program
 
 
 

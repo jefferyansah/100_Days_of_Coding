@@ -10,24 +10,24 @@ def checker():
 	print('Take a guess')
 	guessNum = int(input())
 
-	while True:
+	# while True:
 
-		i = 1
+	# 	i = 1
 
 
-		if guessNum > genNum:
+	# 	if guessNum > genNum:
 
-			print('Your guess is too High')
+	# 		print('Your guess is too High')
 
-		elif guessNum < genNum:
+	# 	elif guessNum < genNum:
 
-			print('Your guess is too Low')
+	# 		print('Your guess is too Low')
 
-		elif guessNum == genNum:
-			print('Good Job. You guessed my number in ' + str(i) + ' guesses')
-			break
+	# 	elif guessNum == genNum:
+	# 		print('Good Job. You guessed my number in ' + str(i) + ' guesses')
+	# 		break
 
-		i = i + 1
+	# 	i = i + 1
 
 
 checker()
