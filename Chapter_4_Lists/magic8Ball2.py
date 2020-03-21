@@ -29,7 +29,7 @@ def get_index(list_items):
 
     	if number in range(len(spam)-1):
 
-    		print('You have entered: ' + str(number)+ 'Hence: ' + spam[number])
+    		print('You have entered : ' + str(number)+ ', Hence: ' + spam[number])
     		break
 
     	else:
